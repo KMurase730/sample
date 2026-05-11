@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>Hello World</title>
 
     <style>
+        body {
+            font-family: sans-serif;
+            margin: 30px;
+        }
+
         .exercise-title {
-            font-size: 28px;        
-            font-weight: bold;   
-            color: white;             
-            background-color: blue; 
-            padding: 10px;           
-            border-radius: 10px;    
-            width: fit-content;     
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            background-color: blue;
+            padding: 10px;
+            border-radius: 10px;
+            width: fit-content;
+            margin-top: 30px;
+        }
+
+        .sushi-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .sushi-table th,
+        .sushi-table td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .sushi-table th {
+            background-color: #dbeafe;
         }
     </style>
 </head>
@@ -28,7 +51,7 @@
         <li>ほにゃらら</li>
     </ol>
 
-     <p class="exercise-title">練習問題2.3</p>
+    <p class="exercise-title">練習問題2.3</p>
 
     <dl>
         <dt>作者</dt>
@@ -42,6 +65,7 @@
         <dt lang="ja"><dfn>色</dfn></dt>
         <dt lang="en-US"><dfn>color</dfn></dt>
         <dt lang="en-GB"><dfn>colour</dfn></dt>
+
         <dd>
             可視光線の波長の長短によって人が視覚で感じ分けられる
             色覚・色刺激のこと。
@@ -64,9 +88,10 @@
         <dd>ポイントは加算されません。</dd>
     </dl>
 
-     <p class="exercise-title">練習問題2.4</p>
+    <p class="exercise-title">練習問題2.4</p>
 
-    <table border="1">
+    <!-- 1つ目のテーブル -->
+    <table class="sushi-table">
 
         <caption>
             <strong>お寿司をどこで食べるか? その長所と短所</strong>
@@ -106,9 +131,8 @@
 
     </table>
 
-    <br>
-
-    <table border="1">
+    <!-- 2つ目のテーブル -->
+    <table class="sushi-table">
 
         <caption>
             <strong>お寿司をどこで食べるか? その長所と短所</strong>
@@ -139,4 +163,5 @@
     </table>
 
 </body>
+
 </html>
