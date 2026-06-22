@@ -10,3 +10,14 @@ var sum='2'+'3'
 var sum=Number('2')+Number('3')
 var sum='2'+3
 var sum=Number('2')+3
+
+
+function calculateArea(width, height) {
+　var area = width * height; // 面積計算
+　return area;}
+
+var width = 5;
+var height = 3;
+var rectangleArea = calculateArea(width, height); // 長方形の面積の計算
+
+console.log("長方形の面積は " + rectangleArea + " です");
